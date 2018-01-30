@@ -419,7 +419,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 582,
+          "SourceUnit": 588,
           "absolutePath": "zeppelin-solidity/contracts/token/DetailedERC20.sol",
           "file": "zeppelin-solidity/contracts/token/DetailedERC20.sol",
           "scope": 156,
@@ -434,7 +434,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 749,
+          "SourceUnit": 755,
           "absolutePath": "zeppelin-solidity/contracts/token/MintableToken.sol",
           "file": "zeppelin-solidity/contracts/token/MintableToken.sol",
           "scope": 156,
@@ -466,27 +466,27 @@
         "attributes": {
           "contractDependencies": [
             125,
-            461,
-            547,
-            581,
-            624,
-            653,
-            748,
-            994
+            467,
+            553,
+            587,
+            630,
+            659,
+            754,
+            1000
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             155,
-            581,
-            748,
-            461,
+            587,
+            754,
+            467,
             125,
-            994,
-            547,
-            624,
-            653
+            1000,
+            553,
+            630,
+            659
           ],
           "name": "VoteToken",
           "scope": 156
@@ -526,7 +526,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "MintableToken",
-                  "referencedDeclaration": 748,
+                  "referencedDeclaration": 754,
                   "type": "contract MintableToken"
                 },
                 "id": 133,
@@ -549,7 +549,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "DetailedERC20",
-                  "referencedDeclaration": 581,
+                  "referencedDeclaration": 587,
                   "type": "contract DetailedERC20"
                 },
                 "id": 135,
@@ -604,7 +604,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 581,
+                      "referencedDeclaration": 587,
                       "type": "type(contract DetailedERC20)",
                       "value": "DetailedERC20"
                     },
@@ -702,7 +702,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 728,
+                              "referencedDeclaration": 734,
                               "type": "function (address,uint256) returns (bool)",
                               "value": "mint"
                             },
@@ -728,7 +728,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1006,
+                                  "referencedDeclaration": 1012,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -796,7 +796,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 747,
+                              "referencedDeclaration": 753,
                               "type": "function () returns (bool)",
                               "value": "finishMinting"
                             },
@@ -941,5 +941,5 @@
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-01-30T17:04:31.477Z"
+  "updatedAt": "2018-01-30T21:17:06.780Z"
 }

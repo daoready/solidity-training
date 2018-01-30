@@ -322,6 +322,7 @@ contract Voting is ERC223ReceivingContract, Ownable {
 
   function tokenFallback(address _from, uint _value, bytes _data) public {
       require(!completed);
+      require(_value>0);
       require(msg.sender==address(voting_token));
 
       if(votes[_from]==0){

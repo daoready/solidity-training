@@ -255,7 +255,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 995,
+          "SourceUnit": 1001,
           "absolutePath": "zeppelin-solidity/contracts/token/StandardToken.sol",
           "file": "zeppelin-solidity/contracts/token/StandardToken.sol",
           "scope": 126,
@@ -412,20 +412,20 @@
       {
         "attributes": {
           "contractDependencies": [
-            547,
-            624,
-            653,
-            994
+            553,
+            630,
+            659,
+            1000
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             125,
-            994,
-            547,
-            624,
-            653
+            1000,
+            553,
+            630,
+            659
           ],
           "name": "ERC233Token",
           "scope": 126
@@ -442,7 +442,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "StandardToken",
-                  "referencedDeclaration": 994,
+                  "referencedDeclaration": 1000,
                   "type": "contract StandardToken"
                 },
                 "id": 13,
@@ -466,7 +466,7 @@
               "payable": false,
               "scope": 125,
               "stateMutability": "nonpayable",
-              "superFunction": 534,
+              "superFunction": 540,
               "visibility": "public"
             },
             "children": [
@@ -592,7 +592,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1009,
+                              "referencedDeclaration": 1015,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -632,7 +632,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "transfer",
-                                  "referencedDeclaration": 534,
+                                  "referencedDeclaration": 540,
                                   "type": "function (address,uint256) returns (bool)"
                                 },
                                 "children": [
@@ -642,7 +642,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1030,
+                                      "referencedDeclaration": 1036,
                                       "type": "contract super ERC233Token",
                                       "value": "super"
                                     },
@@ -969,7 +969,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 1006,
+                                          "referencedDeclaration": 1012,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -1079,7 +1079,7 @@
               "payable": false,
               "scope": 125,
               "stateMutability": "nonpayable",
-              "superFunction": 848,
+              "superFunction": 854,
               "visibility": "public"
             },
             "children": [
@@ -1231,7 +1231,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1009,
+                              "referencedDeclaration": 1015,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -1275,7 +1275,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "transferFrom",
-                                  "referencedDeclaration": 848,
+                                  "referencedDeclaration": 854,
                                   "type": "function (address,address,uint256) returns (bool)"
                                 },
                                 "children": [
@@ -1285,7 +1285,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1030,
+                                      "referencedDeclaration": 1036,
                                       "type": "contract super ERC233Token",
                                       "value": "super"
                                     },
@@ -2034,5 +2034,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-01-30T16:47:13.920Z"
+  "updatedAt": "2018-01-30T21:17:06.777Z"
 }
