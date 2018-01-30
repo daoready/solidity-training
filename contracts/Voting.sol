@@ -1,12 +1,10 @@
 pragma solidity ^0.4.18;
 
 import 'zeppelin-solidity/contracts/math/SafeMath.sol';
-import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
-
 import './VoteToken.sol';
 
 
-contract Voting is ERC223ReceivingContract, Ownable {
+contract Voting is ERC223ReceivingContract {
 
   using SafeMath for uint256;
 
@@ -15,11 +13,13 @@ contract Voting is ERC223ReceivingContract, Ownable {
   mapping(uint256 => address) public voters;
 
   bool public completed = false;
+  uint public quorum;
   uint public voters_count = 0;
   uint public vote_result = 0;
 
-  function Voting(VoteToken _voting_token) {
+  function Voting(VoteToken _voting_token, uint256 _quorum) {
      voting_token = _voting_token;
+     quorum = _quorum;
   }
 
   function tokenFallback(address _from, uint _value, bytes _data) public {
@@ -31,12 +31,16 @@ contract Voting is ERC223ReceivingContract, Ownable {
         voters[voters_count] = _from;
         voters_count += 1;
       }
+
       votes[_from].add(_value);
+
+      if(voters_count==quorum){
+        finish();
+      }
   }
 
 
-  function finish()  onlyOwner public {
-    require(!completed);
+  function finish() internal {
 
     uint sum = 0;
     for(uint i=0;i<voters_count;i++){

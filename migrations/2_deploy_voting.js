@@ -10,7 +10,7 @@ module.exports = function(deployer, network, accounts) {
         return VoteToken.deployed();
     }).then(function(instance) {
         token = instance;
-        return deployer.deploy(Voting, token.address);
+        return deployer.deploy(Voting, token.address, 6);
     }).then(function() {
         return Voting.deployed();
     }).then(function(instance) {
