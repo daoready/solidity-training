@@ -419,7 +419,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 594,
+          "SourceUnit": 598,
           "absolutePath": "zeppelin-solidity/contracts/token/DetailedERC20.sol",
           "file": "zeppelin-solidity/contracts/token/DetailedERC20.sol",
           "scope": 156,
@@ -434,7 +434,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 761,
+          "SourceUnit": 765,
           "absolutePath": "zeppelin-solidity/contracts/token/MintableToken.sol",
           "file": "zeppelin-solidity/contracts/token/MintableToken.sol",
           "scope": 156,
@@ -466,27 +466,27 @@
         "attributes": {
           "contractDependencies": [
             125,
-            473,
-            559,
-            593,
-            636,
-            665,
-            760,
-            1006
+            477,
+            563,
+            597,
+            640,
+            669,
+            764,
+            1010
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             155,
-            593,
-            760,
-            473,
+            597,
+            764,
+            477,
             125,
-            1006,
-            559,
-            636,
-            665
+            1010,
+            563,
+            640,
+            669
           ],
           "name": "VoteToken",
           "scope": 156
@@ -526,7 +526,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "MintableToken",
-                  "referencedDeclaration": 760,
+                  "referencedDeclaration": 764,
                   "type": "contract MintableToken"
                 },
                 "id": 133,
@@ -549,7 +549,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "DetailedERC20",
-                  "referencedDeclaration": 593,
+                  "referencedDeclaration": 597,
                   "type": "contract DetailedERC20"
                 },
                 "id": 135,
@@ -604,7 +604,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 593,
+                      "referencedDeclaration": 597,
                       "type": "type(contract DetailedERC20)",
                       "value": "DetailedERC20"
                     },
@@ -702,7 +702,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 740,
+                              "referencedDeclaration": 744,
                               "type": "function (address,uint256) returns (bool)",
                               "value": "mint"
                             },
@@ -728,7 +728,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1018,
+                                  "referencedDeclaration": 1022,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -796,7 +796,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 759,
+                              "referencedDeclaration": 763,
                               "type": "function () returns (bool)",
                               "value": "finishMinting"
                             },
@@ -839,6 +839,96 @@
     "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "events": {
+        "0x0f6798a560793a54c3bcfe86a93cde1e73087d944c0ea20544137d4121396885": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "Mint",
+          "type": "event"
+        },
+        "0xae5184fba832cb2b1f702aca6117b8d265eaf03ad33eb133f19dde0f5920fa08": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "MintFinished",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "spender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Approval",
+          "type": "event"
+        },
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xf7e356f7e42cfb71bf8efa4f8107242aa3066fc9"
+    },
     "1517331105311": {
       "events": {},
       "links": {},
@@ -938,8 +1028,98 @@
       },
       "links": {},
       "address": "0x6e63dee8f11a2f59acbc355a5a96f44930ddfc3a"
+    },
+    "1517347470441": {
+      "events": {
+        "0x0f6798a560793a54c3bcfe86a93cde1e73087d944c0ea20544137d4121396885": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "Mint",
+          "type": "event"
+        },
+        "0xae5184fba832cb2b1f702aca6117b8d265eaf03ad33eb133f19dde0f5920fa08": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "MintFinished",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "spender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Approval",
+          "type": "event"
+        },
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xaef4db395f0a27a06e681869d0fff6d4e86aa23e"
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-01-30T21:24:02.916Z"
+  "updatedAt": "2018-01-31T13:22:55.386Z"
 }

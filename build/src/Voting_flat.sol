@@ -332,7 +332,7 @@ contract Voting is ERC223ReceivingContract {
         voters_count += 1;
       }
 
-      votes[_from].add(_value);
+      votes[_from] = votes[_from].add(_value);
 
       if(voters_count==quorum){
         finish();
